@@ -1,9 +1,18 @@
 public class Main {
-    public static void main(String[] args) {
-        long balance = 100;
-        long amountOfDeposit = 2000;
-        if (amountOfDeposit > 1000);
-        balance += amountOfDeposit*0.01+amountOfDeposit;
-        System.out.println(balance);
+    public static void deal(int amountOfDeposit) {
+        int initialBalance=100;
+        int finalBalance;
+        int amountOfDeposit;
+        if (amountOfDeposit > 1000) {
+            finalBalance += amountOfDeposit * 0.01 + amountOfDeposit+initialBalance;
+        } else {
+            finalBalance += amountOfDeposit+initialBalance;
+        }
+    }
+
+
+    public static void main(String[] args){
+        deal(20000);
+
     }
 }
