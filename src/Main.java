@@ -1,13 +1,12 @@
 public class Main {
     public static void deal(int amountOfDeposit) {
-        int initialBalance=100;
-        int finalBalance;
-          if (amountOfDeposit > 1000) {
-            finalBalance = amountOfDeposit / 100 + amountOfDeposit+initialBalance;
-              System.out.println(finalBalance);
+        int balance=100;
+              if (amountOfDeposit > 1000) {
+            balance = amountOfDeposit / 100 + amountOfDeposit+balance;
+          
         } else {
-            finalBalance = amountOfDeposit+initialBalance;
-              System.out.println(finalBalance);
-        }
+            balance = amountOfDeposit+balance;
+              
+        }System.out.println(finalBalance);
     }
 
