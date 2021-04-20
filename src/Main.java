@@ -1,5 +1,5 @@
 public class Main {
-    public static void balanceDeal(int balance, int payment) {
+    public static void balanceDeal( int payment, int balance) {
         int bonusAmount = 100;
         int paymentBonusMin = 1000;
         if (payment <= paymentBonusMin) {
