@@ -1,12 +1,18 @@
 public class Main {
-    public static void deal(int amountOfDeposit) {
-        int balance=100;
-              if (amountOfDeposit > 1000) {
-            balance = amountOfDeposit / 100 + amountOfDeposit+balance;
-          
+    public static void balanceDeal(int balance, int payment) {
+        int bonusAmount = 100;
+        int paymentBonusMin = 1000;
+        if (payment <= paymentBonusMin) {
+             balance += payment;
+            
         } else {
-            balance = amountOfDeposit+balance;
-              
-        }System.out.println(finalBalance);
+       int bonus = payment / bonusAmount;
+          balance += payment + bonus;
+        }
+        System.out.println("Ваш баланс " + balance);
     }
-
+      public static void main(String[] args){
+        balanceDeal(300,50);
+        balanceDeal(50, 10000);
+    }
+}
