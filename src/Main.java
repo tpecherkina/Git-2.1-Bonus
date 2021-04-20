@@ -1,15 +1,14 @@
 public class Main {
-    public static void balanceDeal( int payment, int balance) {
-        int bonusAmount = 100;
+    public static void balanceDeal(int payment, int balance) {
         int paymentBonusMin = 1000;
-        if (payment <= paymentBonusMin) {
-             balance = balance + payment;
-            
+        int bonusAmount = 100;
+          if (payment <= paymentBonusMin) {
+             balance = balance + payment;   
         } else {
-       int bonus = payment / bonusAmount;
-          balance = balance + payment + bonus;
+             int bonus = payment / bonusAmount;
+             balance = balance + payment + bonus;
         }
-        System.out.println("Ваш баланс " + balance);
+      System.out.println("Ваш баланс " + balance);
     }
       public static void main(String[] args){
         balanceDeal(300,50);
