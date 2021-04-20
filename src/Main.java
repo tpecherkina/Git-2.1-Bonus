@@ -3,11 +3,11 @@ public class Main {
         int bonusAmount = 100;
         int paymentBonusMin = 1000;
         if (payment <= paymentBonusMin) {
-             balance += payment;
+             balance = balance + payment;
             
         } else {
        int bonus = payment / bonusAmount;
-          balance += payment + bonus;
+          balance = balance + payment + bonus;
         }
         System.out.println("Ваш баланс " + balance);
     }
